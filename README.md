@@ -12,6 +12,8 @@ Installing
 
 1. Create a ROLE or an USER on AWS IAM giving access to start/stop EC2 instances for instances with the odhom-host tag. The minimum JSON permissions are:
 
+````
+
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -50,6 +52,7 @@ Installing
         }
     ]
 }
+````
 
 1.1 If you are using an USER instead of an instance role, you must update the credentials (./credentials) file with the correct keys.
 
