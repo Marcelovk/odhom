@@ -8,7 +8,7 @@ Depends on
 3. AWS CLI
 4. Ubuntu with upstart (can be run on other distros too)
 
-*Installing*
+**Installing**
 
 Create a ROLE or an USER on AWS IAM giving access to start/stop EC2 instances for instances with the odhom-host tag. The minimum JSON permissions are:
 
@@ -67,7 +67,7 @@ Starting and stoping :
 `sudo stop odhom`
 
 
-*Adding machines to odhom*
+**Adding machines to odhom**
 
   Add the tag with the key=odhom-host and the value with the fully qualyfied hostname to every instance that you want. Be aware that as soon as odhom detects it (it scans every 5 seconds) it will shut down the machine after 55 minutes of inactivity (Activity is equal to receiving a HTTP request to that hostname)
 
