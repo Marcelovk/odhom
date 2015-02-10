@@ -56,18 +56,18 @@ Installing
 
 1.1 If you are using an USER instead of an instance role, you must update the credentials (./credentials) file with the correct keys.
 
-2. Create an UBUNTU instance on AWS console, and remember to open the port 80 TCP. For every instance that you want odhom to manage, you must open the access from the odhom instance to the port that is listening, so that odhom will be able to proxy it.
+1.2. Create an UBUNTU instance on AWS console, and remember to open the port 80 TCP. For every instance that you want odhom to manage, you must open the access from the odhom instance to the port that is listening, so that odhom will be able to proxy it.
 
-3. SSH into your newly created instance and run script-bringup-ubuntu.sh to install the dependencies and odhom on /opt/odhom.
+1.3. SSH into your newly created instance and run script-bringup-ubuntu.sh to install the dependencies and odhom on /opt/odhom.
 
-4. Starting and stoping : 
+1.4. Starting and stoping : 
 
-sudo start odhom 
-sudo stop odhom
+`sudo start odhom`
+`sudo stop odhom`
 
-5. Adding machines to odhom
+2. Adding machines to odhom
 
-5.1 Add the tag with the key=odhom-host and the value with the fully qualyfied hostname to every instance that you want. Be aware that as soon as odhom detects it (it scans every 5 seconds) it will shut down the machine after 55 minutes of inactivity (Activity is equal to receiving a HTTP request to that hostname)
+2.1 Add the tag with the key=odhom-host and the value with the fully qualyfied hostname to every instance that you want. Be aware that as soon as odhom detects it (it scans every 5 seconds) it will shut down the machine after 55 minutes of inactivity (Activity is equal to receiving a HTTP request to that hostname)
 
 You can add multiple hostnames on the odhom-host value, splitting using a comma and no spaces, example: domain1.yourcompany.com,www.domain1.yourcompany.com
 
