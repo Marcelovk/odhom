@@ -66,15 +66,16 @@ Installing
 
 `sudo stop odhom`
 
+
 2. Adding machines to odhom
 
 2.1 Add the tag with the key=odhom-host and the value with the fully qualyfied hostname to every instance that you want. Be aware that as soon as odhom detects it (it scans every 5 seconds) it will shut down the machine after 55 minutes of inactivity (Activity is equal to receiving a HTTP request to that hostname)
 
 You can add multiple hostnames on the odhom-host value, splitting using a comma and no spaces, example: domain1.yourcompany.com,www.domain1.yourcompany.com
 
-5.2 Configure your DNS settings so that these domains point to the ip address (or to the CNAME record) of the odhom machine. You can also use your hosts file for testing on your machine, if you prefer.
+2.2 Configure your DNS settings so that these domains point to the ip address (or to the CNAME record) of the odhom machine. You can also use your hosts file for testing on your machine, if you prefer.
 
-5.3 There is a log file under /opt/odhom/odhom.log
+3. There is a log file under /opt/odhom/odhom.log
 
 You can check if odhom is running accessing its ip address and adding a /odhom after it.
 
