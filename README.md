@@ -63,6 +63,7 @@ Installing
 1.4. Starting and stoping : 
 
 `sudo start odhom`
+
 `sudo stop odhom`
 
 2. Adding machines to odhom
